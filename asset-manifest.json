@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/-COMM-10-SENATOR-WEBSITE/static/css/main.dd34bb27.css",
+    "main.css": "/-COMM-10-SENATOR-WEBSITE/static/css/main.7db06fd8.css",
     "main.js": "/-COMM-10-SENATOR-WEBSITE/static/js/main.b3388c89.js",
     "static/js/453.0690ce60.chunk.js": "/-COMM-10-SENATOR-WEBSITE/static/js/453.0690ce60.chunk.js",
     "index.html": "/-COMM-10-SENATOR-WEBSITE/index.html",
-    "main.dd34bb27.css.map": "/-COMM-10-SENATOR-WEBSITE/static/css/main.dd34bb27.css.map",
+    "main.7db06fd8.css.map": "/-COMM-10-SENATOR-WEBSITE/static/css/main.7db06fd8.css.map",
     "main.b3388c89.js.map": "/-COMM-10-SENATOR-WEBSITE/static/js/main.b3388c89.js.map",
     "453.0690ce60.chunk.js.map": "/-COMM-10-SENATOR-WEBSITE/static/js/453.0690ce60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd34bb27.css",
+    "static/css/main.7db06fd8.css",
     "static/js/main.b3388c89.js"
   ]
 }
