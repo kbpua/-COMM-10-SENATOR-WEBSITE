@@ -92,6 +92,22 @@ function Platform() {
   return (
     <div className="page">
       <h2>Platform & Stances</h2>
+      {/* Media for End Contractualization */}
+      <div className="platform-media">
+        <img src={process.env.PUBLIC_URL + '/rally-photo.jpg'} alt="Ka Leody at labor rally" className="media-img" />
+        <div>
+          <h3>End Contractualization</h3>
+          <p>Ka Leody leads workers in a rally to end contractualization and fight for job security.</p>
+        </div>
+      </div>
+      {/* Media for For the People */}
+      <div className="platform-media">
+        <img src={process.env.PUBLIC_URL + '/for-the-people.jpg'} alt="Ka Leody voting with the people" className="media-img" />
+        <div>
+          <h3>For the People</h3>
+          <p>Ka Leody stands with ordinary Filipinos, championing fair elections and true representation for all. His platform is rooted in the needs and voices of the people.</p>
+        </div>
+      </div>
       <ul>
         <li>End contractualization ("endo") and increase workers' wages</li>
         <li>Abolish the Mining Act of 1995</li>
@@ -113,7 +129,17 @@ function Platform() {
 }
 
 function News() {
-  return <div className="page"><h2>News</h2><p>Latest news and updates about the campaign.</p></div>;
+  return (
+    <div className="page">
+      <h2>News</h2>
+      {/* Example embedded YouTube video */}
+      <div className="media-video">
+        <iframe width="100%" height="250" src="https://www.youtube.com/embed/QPrf-QrrEPo" title="YouTube video" frameBorder="0" allowFullScreen></iframe>
+      </div>
+      <p>Latest news and updates about the campaign.</p>
+      {/* To add more videos, copy the media-video div and update the YouTube link */}
+    </div>
+  );
 }
 function Events() {
   return <div className="page"><h2>Events</h2><p>Upcoming campaign events and rallies.</p></div>;
@@ -155,7 +181,21 @@ function App() {
           </Routes>
         </main>
         <footer>
-          <p>&copy; 2024 Leodegario "Ka Leody" de Guzman. All rights reserved.</p>
+          <div className="footer-social">
+            <a href="https://www.facebook.com/KaLeodyDeGuzman" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src={process.env.PUBLIC_URL + '/fb.png'} alt="Facebook" className="footer-icon" />
+            </a>
+            <a href="https://x.com/LeodyManggagawa" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src={process.env.PUBLIC_URL + '/x.png'} alt="X" className="footer-icon" />
+            </a>
+            <a href="https://www.youtube.com/@KaLeodyDeGuzman" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <img src={process.env.PUBLIC_URL + '/youtube.png'} alt="YouTube" className="footer-icon" />
+            </a>
+            <a href="mailto:kaleody.manggagawa@gmail.com" aria-label="Email">
+              <img src={process.env.PUBLIC_URL + '/email.png'} alt="Email" className="footer-icon" />
+            </a>
+          </div>
+          <p>&copy; 2025 Leodegario "Ka Leody" de Guzman. All rights reserved.</p>
         </footer>
       </div>
     </Router>
