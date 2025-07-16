@@ -2,7 +2,7 @@
   "name": "leody-political-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kbpua.github.io/COMM-10-SENATOR-WEBSITE",
+  "homepage": "https://kbpua.github.io/-COMM-10-SENATOR-WEBSITE",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
