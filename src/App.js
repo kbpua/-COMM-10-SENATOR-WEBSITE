@@ -13,13 +13,7 @@ function TopBar() {
 }
 
 function Header() {
-  return (
-    <header className="main-header">
-      <Link to="/" className="logo-link">
-        <div className="logo-placeholder">KA LEODY 2025</div>
-      </Link>
-    </header>
-  );
+  return null; // Remove the header logo, as it will be moved to NavBar
 }
 
 function NavBar() {
@@ -28,6 +22,13 @@ function NavBar() {
   const handleClose = () => setOpen(false);
   return (
     <nav className="nav-bar">
+      <Link to="/" className="nav-logo">
+        <img
+          src={process.env.PUBLIC_URL + '/KA LEODY STICKER.png'}
+          alt="Leody de Guzman Logo"
+          style={{ maxWidth: '90px', height: '90px', display: 'block' }}
+        />
+      </Link>
       <button className={`nav-toggle${open ? ' open' : ''}`} onClick={handleToggle} aria-label="Toggle navigation">
         <span className="bar"></span>
         <span className="bar"></span>
@@ -145,13 +146,60 @@ function Events() {
   return <div className="page"><h2>Events</h2><p>Upcoming campaign events and rallies.</p></div>;
 }
 function GetInvolved() {
-  return <div className="page"><h2>Get Involved</h2><p>Volunteer, join, or support the campaign.</p></div>;
+  return <div className="page"><h2>Get Involved</h2><p>Volunteer, join, or support the campaign.</p>
+  <h3>Contact us through the following:</h3>
+            <div className="footer-social">
+            <a href="https://www.facebook.com/KaLeodyDeGuzman" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src={process.env.PUBLIC_URL + '/fb.png'} alt="Facebook" className="footer-icon" />
+            </a>      
+             <p>Ka Leody</p>  
+            <a href="https://x.com/LeodyManggagawa" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src={process.env.PUBLIC_URL + '/x.png'} alt="X" className="footer-icon" />
+            </a>
+             <p>@LeodyManggagawa</p>  
+            <a href="mailto:kaleody.manggagawa@gmail.com" aria-label="Email">
+              <img src={process.env.PUBLIC_URL + '/email.png'} alt="Email" className="footer-icon" />
+            </a>
+             <p>kaleody.manggagawa@gmail.com</p>  
+          </div>
+  </div>;
 }
 function Donate() {
-  return <div className="page"><h2>Contribute</h2><p>Support Ka Leody's campaign with your donation.</p></div>;
+  return <div className="page"><h2>Contribute</h2><p>Support Ka Leody's campaign with your donation.</p>
+<div className="platform-media">
+        <img src={process.env.PUBLIC_URL + '/placeholder-profile.jpg'} alt="Ka Leody at labor rally" className="media-img" />
+        <div>
+          <h3>Any form of help matters!</h3>
+          <p>You can help via donating through:</p>
+          <li>GCash: 0969 038 5088</li>
+          <li>PNB: 0101010101010101</li>
+          <li>PayMaya: 0923 456 7889</li>
+        </div>
+      </div></div>;
 }
 function Shop() {
-  return <div className="page"><h2>Shop</h2><p>Official campaign merchandise coming soon.</p></div>;
+  return <div className="page"><h2>Shop</h2><p>Official campaign merchandise.</p>
+  <div className="platform-media">
+        <img src={process.env.PUBLIC_URL + '/KA LEODY SHIRT.png'} alt="Ka Leody at labor rally" className="media-img" />
+        <div>
+          <h3>KA LEODY SHIRT</h3>
+          <li>PHP 250</li>
+        </div>
+      </div>
+  <div className="platform-media">
+        <img src={process.env.PUBLIC_URL + '/KA LEODY CAP.png'} alt="Ka Leody at labor rally" className="media-img" />
+        <div>
+          <h3>KA LEODY CAP</h3>
+          <p>PHP 150</p>
+        </div>
+      </div>
+  <div className="platform-media">
+        <img src={process.env.PUBLIC_URL + '/KA LEODY STICKER.png'} alt="Ka Leody at labor rally" className="media-img" />
+        <div>
+          <h3>KA LEODY STICKER</h3>
+          <p>PHP 20</p>
+        </div>
+      </div></div>;    
 }
 function Home() {
   return (
