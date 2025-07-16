@@ -112,16 +112,15 @@ body {
   box-shadow: 0 4px 16px rgba(0,0,0,0.13);
 }
 
-.hero-with-image {
+.hero-section, .hero-with-image {
+  width: 100vw;
   position: relative;
-  min-height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  overflow: hidden;
-  margin-bottom: 2.5rem;
-  border-radius: 0 0 24px 24px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: none;
+  border-radius: 0;
   box-shadow: 0 8px 32px rgba(183,28,28,0.07);
   animation: fadeIn 1.2s;
 }
@@ -132,11 +131,12 @@ body {
 }
 
 .hero-img {
-  width: 100%;
+  width: 100vw;
+  max-width: none;
+  display: block;
   height: 400px;
   object-fit: cover;
   object-position: center;
-  display: block;
   filter: brightness(0.92) contrast(1.05);
 }
 
@@ -399,6 +399,17 @@ footer .footer-social a:hover {
   box-shadow: 0 4px 16px rgba(183,28,28,0.13);
   transform: translateY(-2px) scale(1.08);
   background: #fff3f3;
+}
+
+/* Utility class for future full-bleed sections */
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: none;
 }
 
 @media (max-width: 900px) {
