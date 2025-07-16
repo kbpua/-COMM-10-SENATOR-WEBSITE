@@ -148,7 +148,7 @@ function Events() {
 function GetInvolved() {
   return <div className="page"><h2>Get Involved</h2><p>Volunteer, join, or support the campaign.</p>
   <h3>Contact us through the following:</h3>
-            <div className="footer-social">
+            <div className="contact-social">
             <a href="https://www.facebook.com/KaLeodyDeGuzman" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <img src={process.env.PUBLIC_URL + '/fb.png'} alt="Facebook" className="footer-icon" />
             </a>      
