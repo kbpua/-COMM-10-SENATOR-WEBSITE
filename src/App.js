@@ -1,10 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
 
+const basename = process.env.PUBLIC_URL || '/';
+
 function TopBar() {
   return (
     <div className="top-bar">
-      TEXT KALEODY TO 2025!
+      KAYO ANG LEODY KO!
     </div>
   );
 }
@@ -37,7 +39,7 @@ function NavBar() {
 function Hero() {
   return (
     <section className="hero-section hero-with-image">
-      <img src="/leody-banner.png" alt="Leody de Guzman for Senate" className="hero-img" />
+      <img src={process.env.PUBLIC_URL + '/leody-banner.png'} alt="Leody de Guzman for Senate" className="hero-img" />
       <div className="hero-content hero-content-overlay">
         <h1>"A New Golden Age for the Filipino Worker"</h1>
         <p>Leodegario "Ka Leody" de Guzman, Senatorial Candidate</p>
@@ -124,7 +126,7 @@ function Home() {
 
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <TopBar />
         <Header />
