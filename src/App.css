@@ -457,9 +457,8 @@ footer .footer-social a:hover {
     font-size: 1.15rem;
     border-radius: 8px;
     margin: 0.3rem 0;
-    background: none;
-    box-shadow: none;
-    text-align: left;
+    /* background: none !important; */
+    /* color: #b71c1c !important; */
   }
   .nav-btn.contribute, .nav-btn.shop {
     margin-left: 0;
@@ -469,6 +468,26 @@ footer .footer-social a:hover {
     padding: 0.9rem 0;
     font-size: 1.08rem;
     border-radius: 6px;
+  }
+  .nav-links .nav-btn.contribute {
+    background: linear-gradient(90deg, #b71c1c 60%, #d32f2f 100%) !important;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(183,28,28,0.08);
+    border: none;
+    display: block;
+    text-align: center;
+  }
+  .nav-links .nav-btn.shop {
+    background: #222 !important;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: none;
+    display: block;
+    text-align: center;
   }
   .footer-social {
     flex-direction: row !important;
