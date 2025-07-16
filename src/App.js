@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 const basename = process.env.PUBLIC_URL || '/';
 
@@ -22,16 +23,26 @@ function Header() {
 }
 
 function NavBar() {
+  const [open, setOpen] = useState(false);
+  const handleToggle = () => setOpen((o) => !o);
+  const handleClose = () => setOpen(false);
   return (
     <nav className="nav-bar">
-      <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
-      <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink>
-      <NavLink to="/platform" className={({ isActive }) => isActive ? 'active' : ''}>Platform</NavLink>
-      <NavLink to="/news" className={({ isActive }) => isActive ? 'active' : ''}>News</NavLink>
-      <NavLink to="/events" className={({ isActive }) => isActive ? 'active' : ''}>Events</NavLink>
-      <NavLink to="/get-involved" className={({ isActive }) => isActive ? 'active' : ''}>Get Involved</NavLink>
-      <NavLink to="/donate" className={({ isActive }) => 'nav-btn contribute' + (isActive ? ' active' : '')}>Contribute</NavLink>
-      <NavLink to="/shop" className={({ isActive }) => 'nav-btn shop' + (isActive ? ' active' : '')}>Shop</NavLink>
+      <button className={`nav-toggle${open ? ' open' : ''}`} onClick={handleToggle} aria-label="Toggle navigation">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+      <div className={`nav-links${open ? ' show' : ''}`}>
+        <NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''} onClick={handleClose}>Home</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleClose}>About</NavLink>
+        <NavLink to="/platform" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleClose}>Platform</NavLink>
+        <NavLink to="/news" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleClose}>News</NavLink>
+        <NavLink to="/events" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleClose}>Events</NavLink>
+        <NavLink to="/get-involved" className={({ isActive }) => isActive ? 'active' : ''} onClick={handleClose}>Get Involved</NavLink>
+        <NavLink to="/donate" className={({ isActive }) => 'nav-btn contribute' + (isActive ? ' active' : '')} onClick={handleClose}>Contribute</NavLink>
+        <NavLink to="/shop" className={({ isActive }) => 'nav-btn shop' + (isActive ? ' active' : '')} onClick={handleClose}>Shop</NavLink>
+      </div>
     </nav>
   );
 }
