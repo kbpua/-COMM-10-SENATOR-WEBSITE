@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/-COMM-10-SENATOR-WEBSITE/static/css/main.2d068f38.css",
-    "main.js": "/-COMM-10-SENATOR-WEBSITE/static/js/main.020a3c15.js",
+    "main.css": "/-COMM-10-SENATOR-WEBSITE/static/css/main.5cf318aa.css",
+    "main.js": "/-COMM-10-SENATOR-WEBSITE/static/js/main.18a31ebc.js",
     "static/js/453.0690ce60.chunk.js": "/-COMM-10-SENATOR-WEBSITE/static/js/453.0690ce60.chunk.js",
     "index.html": "/-COMM-10-SENATOR-WEBSITE/index.html",
-    "main.2d068f38.css.map": "/-COMM-10-SENATOR-WEBSITE/static/css/main.2d068f38.css.map",
-    "main.020a3c15.js.map": "/-COMM-10-SENATOR-WEBSITE/static/js/main.020a3c15.js.map",
+    "main.5cf318aa.css.map": "/-COMM-10-SENATOR-WEBSITE/static/css/main.5cf318aa.css.map",
+    "main.18a31ebc.js.map": "/-COMM-10-SENATOR-WEBSITE/static/js/main.18a31ebc.js.map",
     "453.0690ce60.chunk.js.map": "/-COMM-10-SENATOR-WEBSITE/static/js/453.0690ce60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d068f38.css",
-    "static/js/main.020a3c15.js"
+    "static/css/main.5cf318aa.css",
+    "static/js/main.18a31ebc.js"
   ]
 }
